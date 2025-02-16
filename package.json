@@ -1,0 +1,12 @@
+{
+  "name": "delfines-shuttles-web",
+  "version": "1.0.0",
+  "description": "Los Delfines Shuttles Costa Rica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "losdelfinesshuttle@gmail.com",
+  "license": "ISC"
+}
