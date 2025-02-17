@@ -1,5 +1,5 @@
 {
-  "name": "delfines-shuttles-web",
+  "name": "delfines-shuttles",
   "version": "1.0.0",
   "description": "Los Delfines Shuttles Costa Rica",
   "homepage": "https://www.delfinesshuttles.com",
@@ -7,32 +7,38 @@
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "deploy": "gh-pages -d dist",
+    "clean": "rm -rf dist/",
+    "build:clean": "npm run clean && npm run build",
     "lint": "eslint src/**/*.{js,jsx}",
     "lint:fix": "eslint src/**/*.{js,jsx} --fix",
     "format": "prettier --write src/**/*.{js,jsx,css,scss,json}"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@popperjs/core": "^2.11.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.9",
     "@babel/preset-env": "^7.26.9",
     "@babel/preset-react": "^7.26.3",
     "babel-loader": "^9.2.1",
+    "bootstrap": "^5.3.3",
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
     "eslint": "^9.20.1",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
     "file-loader": "^6.2.0",
     "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.6.3",
     "prettier": "^3.5.1",
     "sass": "^1.85.0",
     "sass-loader": "^16.0.5",
     "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.11",
     "webpack": "^5.98.0",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0"

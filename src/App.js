@@ -9,4 +9,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App; // Exporta el componente principal

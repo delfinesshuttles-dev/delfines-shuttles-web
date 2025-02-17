@@ -24,10 +24,26 @@ git push -u origin main
 
 ## Ejecutar el proyecto
 
-1. Inicia el servidor de desarrollo:
+1. **Development mode (with hot reload):**
 
 ```
 npm start
 ```
 
-2. Abre tu navegador y visita http://localhost:3000. Verás la página de "Sitio en construcción" con un fondo de patrón y el texto centrado.
+- Open `http://localhost:3000` in your browser.
+
+- Changes to React and SCSS will be automatically reloaded.
+
+2. **Production mode (generate bundle):**
+
+```
+npm run build
+```
+
+- Esto generará la carpeta `dist/` con los archivos optimizados.
+
+3. **Deploy to GitHub Pages:**
+
+```
+npm run deploy
+```

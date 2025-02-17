@@ -8,6 +8,7 @@ const ConstructionMessage = () => {
         <p className="lead text-white">
           We are working to give you the best experience.
         </p>
+        <button className="btn btn-primary btn-lg">More information</button>
       </div>
     </div>
   );
